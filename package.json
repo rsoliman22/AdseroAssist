@@ -1,5 +1,5 @@
 {
-  "name": "chatbot-backend",
+  "name": "AdseroAssist",
   "version": "1.0.0",
   "description": "Backend for chatbot to read SharePoint files",
   "main": "server.js",
