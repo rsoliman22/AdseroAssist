@@ -1,19 +1,20 @@
 {
-  "name": "adsero-assist",
-  "version": "1.0.0",
-  "description": "Backend for chatbot to read SharePoint files",
-  "main": "server.js",
+  "name": "v0-microsoft-365-integration",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "node server.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "@azure/identity": "^3.1.0",
-    "@microsoft/microsoft-graph-client": "^3.0.5",
-    "dotenv": "^16.0.3",
-    "cors": "^2.8.5"
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "engines": {
-    "node": "18.x"
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^14.1.0"
   }
 }
