@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 39 45% 58%; /* Gold/bronze color from adsero.me */
+    --primary-foreground: 0 0% 0%; /* Black text on gold */
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 39 45% 58%; /* Gold/bronze accent */
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 39 45% 58%; /* Gold/bronze ring */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 39 45% 58%; /* Gold/bronze color from adsero.me */
+    --primary-foreground: 0 0% 0%; /* Black text on gold */
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 39 45% 58%; /* Gold/bronze accent */
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 39 45% 58%; /* Gold/bronze ring */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@font-face {
+  font-family: "Adsero";
+  src: url("/fonts/Cinzel-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.adsero-font {
+  font-family: "Adsero", serif;
+}
+
+.space-background {
+  background-image: url("/images/space-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.chat-bubble-user {
+  background-color: rgba(179, 140, 87, 0.2); /* Gold/bronze with transparency */
+  border: 1px solid rgba(179, 140, 87, 0.5);
+  color: #ffffff;
+  border-radius: 1rem;
+  border-bottom-left-radius: 0;
+  padding: 0.5rem 1rem;
+  max-width: 80%;
+  overflow-wrap: break-word;
+}
+
+.chat-bubble-bot {
+  background-color: rgba(30, 41, 59, 0.7); /* Dark blue with transparency */
+  color: #ffffff;
+  border-radius: 1rem;
+  border-bottom-right-radius: 0;
+  padding: 0.5rem 1rem;
+  max-width: 80%;
+  overflow-wrap: break-word;
+}
+
+.sidebar-item {
+  @apply p-3 hover:bg-slate-800/50 rounded-lg transition-all cursor-pointer;
+}
+
+.sidebar-item-active {
+  @apply bg-slate-800/70;
+}
+
+.gold-text {
+  color: #b38c57;
+}
+
+.gold-border {
+  border-color: #b38c57;
+}
+
+.gold-bg {
+  background-color: #b38c57;
+}
+
+.gold-ring {
+  --ring-color: #b38c57;
+}
